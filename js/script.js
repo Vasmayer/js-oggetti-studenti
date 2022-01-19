@@ -93,7 +93,7 @@ message = "<h5> 4. Gli studenti sono:</h3><br>";
 
     studentsElement.innerHTML = message;
 
-
+/* aggiungo l'evento al bottone inserisci un'ioggetto */
 insertElement.addEventListener('click',()=>{
 
         addstudent =
@@ -103,6 +103,7 @@ insertElement.addEventListener('click',()=>{
             eta : 0    
         }
 
+        /* prendo i valori contenuti negli input */
     addstudent.nome = nameElement.value;
     addstudent.cognome = surnameElement.value;
     addstudent.eta = etaElement.value;
@@ -111,6 +112,7 @@ insertElement.addEventListener('click',()=>{
 
     console.table(studenti);
 
+    /* stampo a video il risultato */
     addedTextStudent = `Nome:<strong> ${addstudent.nome}</strong><br>Cognome: <strong> ${addstudent.cognome} </strong> <br>`;
     addedTextStudent +='-------------------------------------------------<br>';
     studentsElement.innerHTML += addedTextStudent;
