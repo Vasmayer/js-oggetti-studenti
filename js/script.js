@@ -17,3 +17,15 @@ studente =
     cognome : 'Gates',
     eta : 67
 }
+
+const propertyElement = document.getElementById('property');
+let message = "<div class='my-5'><h5>Le Propietà sono:</h3><br>";
+
+for(let key in studente)
+{
+    message += `---------------> ${key}<br>`;
+}
+
+message+='</div>';
+
+propertyElement.innerHTML = message;
