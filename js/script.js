@@ -10,7 +10,10 @@ Usiamo il DOM per stampare e chiedere le informazioni all'utente!
 
 */
 
-studente=
+/* creo l'oggetto studente */
+studente =
 {
-    
+    nome : 'Bill',
+    cognome : 'Gates',
+    eta : 67
 }
