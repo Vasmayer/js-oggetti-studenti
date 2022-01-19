@@ -109,7 +109,6 @@ insertElement.addEventListener('click',()=>{
     addstudent.eta = etaElement.value;
 
     studenti.push(addstudent);
-
     console.table(studenti);
 
     /* stampo a video il risultato */
